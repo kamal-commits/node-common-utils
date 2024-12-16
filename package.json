@@ -1,6 +1,6 @@
 {
 	"name": "@kamal-commits/node-common-utils",
-	"version": "1.0.7",
+	"version": "1.0.9",
 	"description": "Common Utility Package for Node.js",
 	"main": "index.js",
 	"type": "module",
