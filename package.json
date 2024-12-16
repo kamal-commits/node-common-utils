@@ -1,20 +1,46 @@
 {
-  "name": "@kamal-sha/common-utils",
-  "version": "1.0.0",
-  "description": "Common Util Package",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "kamal kumar sha",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.21.2",
-    "joi": "^17.13.3",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.0",
-    "nodemailer": "^6.9.16",
-    "winston": "^3.17.0",
-    "winston-mongodb": "^6.0.0"
-  }
+	"name": "@kamal-sha/node-common-utils",
+	"version": "1.0.0",
+	"description": "A collection of common utility functions for Node.js applications.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "echo \"Building the project...\"",
+		"prepublishOnly": "npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kamal-commits/node-common-utils.git"
+	},
+	"keywords": [
+		"nodejs",
+		"utilities",
+		"common",
+		"helpers",
+		"library"
+	],
+	"author": "Kamal Kumar Sha",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kamal-commits/node-common-utils/issues"
+	},
+	"homepage": "https://github.com/kamal-commits/node-common-utils#readme",
+	"dependencies": {
+		"express": "^4.21.2",
+		"joi": "^17.13.3",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.9.0",
+		"nodemailer": "^6.9.16",
+		"winston": "^3.17.0",
+		"winston-mongodb": "^6.0.0"
+	},
+	"files": [
+		"index.js",
+		"lib/",
+		"README.md",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=14.0.0"
+	}
 }
