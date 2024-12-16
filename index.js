@@ -1,3 +1,3 @@
-export * from "./crud";
-export * from "./logger";
-export * from "./middlewares";
+export * from "./crud/index.js";
+export * from "./logger/index.js";
+export * from "./middlewares/index.js";

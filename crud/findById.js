@@ -1,6 +1,5 @@
-const mongoose = require('mongoose');
-const logger = require('../logger');
-
+import mongoose from 'mongoose';
+import { logger } from "../logger/index.js";
 /**
  * Find a document by id
  * @param {string} id - ID of the document
@@ -77,7 +76,7 @@ const findByIdAndSendResponse = async (req, res, model, populateFields = []) => 
   }
 };
 
-module.exports = {
+export {
   findById,
-  findByIdAndSendResponse,
+  findByIdAndSendResponse
 };

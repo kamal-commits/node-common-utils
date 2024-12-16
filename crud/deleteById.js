@@ -1,5 +1,9 @@
-const mongoose = require('mongoose');
-const logger = require('../logger');
+// const mongoose = require('mongoose');
+// const logger = require('../logger');
+
+import mongoose from 'mongoose';
+import { logger } from "../logger/index.js";
+
 
 /**
  * Delete a document by id
@@ -68,7 +72,11 @@ const deleteByIdAndSendResponse = async (req, res, model) => {
   }
 };
 
-module.exports = {
+// module.exports = {
+//   deleteById,
+//   deleteByIdAndSendResponse,
+// };
+export {
   deleteById,
-  deleteByIdAndSendResponse,
-};
+  deleteByIdAndSendResponse
+}

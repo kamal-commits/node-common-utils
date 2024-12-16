@@ -1,4 +1,4 @@
-import { logger } from "../logger";
+import { logger } from "../logger/index.js";
 
 const createDocument = async (model, data) => {
   try {

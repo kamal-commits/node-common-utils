@@ -1,5 +1,5 @@
-const winston = require('winston');
-require('winston-mongodb');
+import winston from 'winston';
+import 'winston-mongodb';
 
 const { combine, printf, timestamp, metadata } = winston.format;
 
@@ -11,7 +11,7 @@ const myFormat = printf(({ level, message, timestamp, stack }) => {
  * @description
  * This is a logger module, which is used to log errors to a file and console.
  * @example
- * const { logger } = require('@kamal-sha/common-utils');
+ * import { logger } from '@kamal-sha/common-utils';
  *
  * logger.info("this is an info");
  * logger.warn("this is a warning");
@@ -42,11 +42,11 @@ if (process.env.NODE_ENV !== 'production') {
  * @param {object} logger - The Winston logger instance.
  * @param {string} [collection='error_log'] - The MongoDB collection name.
  * @example
- * const { addMongoDBTransport, logger } = require('@kamal-sha/common-utils');
+ * import { addMongoDBTransport, logger } from '@kamal-sha/common-utils';
  *
  * addMongoDBTransport("mongodb://localhost:27017/test", logger);
  * @example
- * const { addMongoDBTransport, logger } = require('@kamal-sha/common-utils');
+ * import { addMongoDBTransport, logger } from '@kamal-sha/common-utils';
  *
  * addMongoDBTransport("mongodb://localhost:27017/test", logger, "error_log");
  */
@@ -62,4 +62,4 @@ const addMongoDBTransport = (dbUrl, logger, collection = 'error_log') => {
   );
 };
 
-module.exports = { logger, addMongoDBTransport };
+export { logger, addMongoDBTransport };

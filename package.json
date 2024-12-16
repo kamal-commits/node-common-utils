@@ -1,8 +1,9 @@
 {
-	"name": "@kamal-sha/node-common-utils",
-	"version": "1.0.2",
+	"name": "@kamal-commits/node-common-utils",
+	"version": "1.0.7",
 	"description": "Common Utility Package for Node.js",
 	"main": "index.js",
+	"type": "module",
 	"author": "Kamal Kumar Sha",
 	"license": "ISC",
 	"repository": {
@@ -15,7 +16,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "echo \"Building the project...\"",
-		"prepublishOnly": "npm run build"
+		"prepublishOnly": "npm run build",
+		"start": "node index.js"
 	},
 	"keywords": [
 		"nodejs",
@@ -30,6 +32,7 @@
 	"homepage": "https://github.com/kamal-commits/node-common-utils#readme",
 	"dependencies": {
 		"express": "^4.21.2",
+		"express-rate-limit": "^7.5.0",
 		"joi": "^17.13.3",
 		"jsonwebtoken": "^9.0.2",
 		"mongoose": "^8.9.0",

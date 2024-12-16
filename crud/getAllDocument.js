@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const logger = require('../logger');
+
+import { logger } from "../logger/index.js";
 
 /**
  * @description
@@ -146,4 +146,4 @@ const getAllDocumentAndSendResponse = async (
   }
 };
 
-module.exports = getAllDocumentAndSendResponse;
+export { getAllDocumentAndSendResponse };

@@ -1,6 +1,9 @@
-const nodemailer = require('nodemailer');
-const Joi = require('joi');
-import logger from '../logger';
+// const nodemailer = require('nodemailer');
+// const Joi = require('joi');
+import { logger } from "../logger/index.js";
+import nodemailer from 'nodemailer';
+import Joi from 'joi';
+
 
 
 /**

@@ -1,7 +1,8 @@
-const jwt = require('jsonwebtoken');
-const mongoose = require('mongoose');
-const logger = require('../logger');
-const rateLimit = require('express-rate-limit');
+import jwt from 'jsonwebtoken';
+import mongoose from 'mongoose';
+import { logger } from "../logger/index.js";
+import rateLimit from 'express-rate-limit';
+
 
 /**
  * @description
@@ -74,6 +75,4 @@ const authenticateToken = (jwtSecret, userCollectionName = 'users') => [
   },
 ];
 
-module.exports = {
-  authenticateToken,
-};
+export { authenticateToken };

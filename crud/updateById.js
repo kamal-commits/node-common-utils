@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const logger = require('../logger');
+import mongoose from 'mongoose';
+import { logger } from "../logger/index.js";
 
 /**
  * Update a document by id
@@ -79,7 +79,4 @@ const updateByIdAndSendResponse = async (req, res, model, data, populateFields =
   }
 };
 
-module.exports = {
-  updateById,
-  updateByIdAndSendResponse,
-};
+export { updateById, updateByIdAndSendResponse };
