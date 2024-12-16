@@ -1,16 +1,21 @@
 {
 	"name": "@kamal-sha/node-common-utils",
-	"version": "1.0.0",
-	"description": "A collection of common utility functions for Node.js applications.",
+	"version": "1.0.2",
+	"description": "Common Utility Package for Node.js",
 	"main": "index.js",
+	"author": "Kamal Kumar Sha",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kamal-commits/node-common-utils.git"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "echo \"Building the project...\"",
 		"prepublishOnly": "npm run build"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/kamal-commits/node-common-utils.git"
 	},
 	"keywords": [
 		"nodejs",
@@ -19,8 +24,6 @@
 		"helpers",
 		"library"
 	],
-	"author": "Kamal Kumar Sha",
-	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/kamal-commits/node-common-utils/issues"
 	},
